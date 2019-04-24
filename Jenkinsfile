@@ -9,6 +9,7 @@ pipeline {
     stage('where we at') {
             steps {
               sh 'ls'
+              sh 'which curl'
             }
         }
     stage('Install docker-compose') {
