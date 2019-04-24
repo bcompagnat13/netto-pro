@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-              sh 'docker-compose build'docker-compose run app rake db:create
+              sh 'docker-compose build'
             }
         }
         stage('Setup Database') {
